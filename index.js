@@ -62,3 +62,25 @@ function square (number) {
 
 let number = square (2);
 console.log(number);
+
+
+let baseSalary = 30000;
+let overTime = 10;
+let rate = 20;
+
+function getWage(baseSalary, overtime, rate){
+    return baseSalary + (overtime * rate);
+}
+
+
+let employee = {
+    baseSalary: 30000,
+    overtime: 10,
+    rate: 20,
+
+    getWage: function() {
+        return this.baseSalary + (this.overtime * this.rate);
+    }
+};
+
+console.log(employee.getWage());
